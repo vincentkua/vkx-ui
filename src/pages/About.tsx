@@ -1,8 +1,8 @@
 const About = () => {
   return (
     <>
-      <h5>About Page</h5>
-      <p>
+      <h4>About Page</h4>
+      <p style={{ fontSize: "12px" }}>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati
         repellat delectus, nesciunt ullam iusto odit dicta cum vero quam
         reiciendis aut nostrum illo velit. Voluptate veritatis vero libero

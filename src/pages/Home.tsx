@@ -3,7 +3,7 @@ import { StyledRedText } from "../components/styled.component";
 const Home = () => {
   return (
     <>
-      <h5>VKX Home Page</h5>
+      <h4>VKX Home Page</h4>
       <StyledRedText>Red Text Testing</StyledRedText>
     </>
   );
