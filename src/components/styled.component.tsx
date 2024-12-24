@@ -28,9 +28,10 @@ export const SideMenuList = styled.ul`
 `;
 
 export const LeftNavArea = styled.div`
-  flex: 0 0 200px;
-  background-color: #f5f5f5;
+  flex: 0 0 250px;
+  background-color: #ffffff;
   overflow-y: scroll;
+  border-right: 1px solid #ebebeb;
 `;
 
 export const RightContentArea = styled.div`

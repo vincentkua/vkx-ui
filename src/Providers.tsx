@@ -4,12 +4,14 @@ import About from "./pages/About";
 
 import SideMenu from "./components/SideMenu";
 import { LeftNavArea, RightContentArea } from "./components/styled.component";
+import TopMenu from "./components/TopMenu";
 
 const Providers = () => {
   return (
     <>
       <BrowserRouter>
-        <div style={{ display: "flex", height: "100vh" }}>
+        <TopMenu />
+        <div style={{ display: "flex", height: "calc(100vh - 50px)" }}>
           <LeftNavArea>
             <SideMenu />
           </LeftNavArea>
