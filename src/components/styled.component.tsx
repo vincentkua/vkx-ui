@@ -6,7 +6,7 @@ export const StyledRedText = styled.div`
 `;
 
 export const SideMenuSubHeader = styled.div`
-  padding-top: 4px;
+
   padding-bottom: 4px;
   color: #000000;
   font-weight: bold;
@@ -28,7 +28,7 @@ export const SideMenuList = styled.ul`
 `;
 
 export const LeftNavArea = styled.div`
-  flex: 0 0 250px;
+  flex: 0 0 220px;
   background-color: #ffffff;
   overflow-y: scroll;
   border-right: 1px solid #ebebeb;

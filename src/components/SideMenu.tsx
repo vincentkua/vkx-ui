@@ -16,10 +16,8 @@ const SideMenu = () => {
       <SideMenuFlexBox>
         <SideMenuSubHeader>Getting Started</SideMenuSubHeader>
         <SideMenuList>
-          <li onClick={() => navigate("/")}>Home</li>
-          <li>Introduction</li>
-          <li>Design Token</li>
-          <li onClick={() => navigate("/about")}>About</li>
+          <li onClick={() => navigate("/")}>Introduction</li>
+          <li onClick={() => navigate("/designtoken")}>Design Token</li>
         </SideMenuList>
 
         <SideMenuSubHeader>Components</SideMenuSubHeader>
@@ -29,7 +27,7 @@ const SideMenu = () => {
           <li>Loading Screen</li>
         </SideMenuList>
 
-        <SideMenuSubHeader>Utils</SideMenuSubHeader>
+        <SideMenuSubHeader>Utilities</SideMenuSubHeader>
         <SideMenuList>
           <li>useWindowSize</li>
           <li>useDateFormat</li>
