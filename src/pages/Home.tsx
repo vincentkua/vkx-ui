@@ -4,7 +4,13 @@ const Home = () => {
   return (
     <>
       <h4>VKX Home Page</h4>
-      <StyledRedText>Red Text Testing</StyledRedText>
+      <br />
+      <StyledRedText>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, velit
+        amet. Dignissimos error earum beatae nam vitae, praesentium, fugit
+        recusandae iure voluptatem commodi culpa quasi expedita eum quo sapiente
+        vero?
+      </StyledRedText>
     </>
   );
 };
