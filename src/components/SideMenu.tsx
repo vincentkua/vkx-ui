@@ -31,6 +31,7 @@ const SideMenu = () => {
         <SideMenuList>
           <li>useWindowSize</li>
           <li>useDateFormat</li>
+          <li>Scroll to top</li>
           <li>Loading Screen</li>
         </SideMenuList>
       </SideMenuFlexBox>

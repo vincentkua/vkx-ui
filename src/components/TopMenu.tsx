@@ -6,7 +6,7 @@ const TopMenu = () => {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #3b69f1;
+    color: #333333;
     height: 50px;
     padding-left: 10px;
     border-bottom: 1px solid #efefef;
@@ -15,7 +15,7 @@ const TopMenu = () => {
   return (
     <>
       <SideMenuTopHeaderBox>
-        <OrigamiIcon size={28} />
+        <OrigamiIcon size={28} color="#4a5bf6"/>
         <div style={{ fontSize: "14px", fontWeight: "bold" }}>
           VKX-UI
         </div>
