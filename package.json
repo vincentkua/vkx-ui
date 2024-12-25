@@ -16,7 +16,8 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.1.0",
     "react-syntax-highlighter": "^15.6.1",
-    "styled-components": "^6.1.13"
+    "styled-components": "^6.1.13",
+    "vkx-ui": "^0.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
