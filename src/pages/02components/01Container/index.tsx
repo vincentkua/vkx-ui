@@ -76,7 +76,6 @@ const ContainerPage = () => {
       <br />
 
       <h4>Source Code</h4>
-      <p>The code below shows how this component was made.</p>
       <CodeSnippet language="tsx" style={vscDarkPlus}>
         {componentSourceCode}
       </CodeSnippet>

@@ -5,7 +5,7 @@ import { LeftNavArea, RightContentArea } from "./components/styled.component";
 import MenuTop from "./components/MenuTop";
 import Introduction from "./pages/01gettingstarted/Introduction";
 import DesignTokenPage from "./pages/01gettingstarted/DesignTokenPage";
-import Container from "./npmComponents/Container";
+import {Container} from "vkx-ui"
 import ContainerPage from "./pages/02components/01Container";
 
 const Providers = () => {
