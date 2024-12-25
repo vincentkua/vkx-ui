@@ -6,6 +6,7 @@ import MenuTop from "./components/MenuTop";
 import Introduction from "./pages/01Gettingstarted/01Introduction/Introduction";
 import DesignTokenPage from "./pages/01Gettingstarted/02DesignToken/DesignTokenPage";
 import {Container} from "vkx-ui"
+import ContainerPage from "./pages/02Components/01ContainerPage/ContainerPage";
 
 
 
@@ -23,7 +24,7 @@ const Providers = () => {
               <Routes>
                 <Route path="/" element={<Introduction />} />
                 <Route path="/designtoken" element={<DesignTokenPage />} />
-                <Route path="/container" element={<Introduction />} />
+                <Route path="/container" element={<ContainerPage />} />
               </Routes>
             </Container>
           </RightContentArea>
