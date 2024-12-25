@@ -1,4 +1,5 @@
-import Container from "../../../npmComponents/Container";
+import { Container } from "vkx-ui";
+
 
 const SampleUsage = () => {
   return (
