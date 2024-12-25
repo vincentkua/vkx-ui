@@ -62,7 +62,7 @@ const ContainerPage = () => {
       <p>
         The container centers your content horizontally. It's the most basic
         layout element. The max-width was set at 100% on mobile device and up to
-        1200px on desktop device when the width is more than 1200px.
+        1200px on desktop device when the width is more than 1200px. x
       </p>
 
       <br />
