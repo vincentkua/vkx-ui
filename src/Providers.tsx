@@ -3,10 +3,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MenuSide from "./components/MenuSide";
 import { LeftNavArea, RightContentArea } from "./components/styled.component";
 import MenuTop from "./components/MenuTop";
-import Introduction from "./pages/01gettingstarted/01introduction/Introduction";
-import DesignTokenPage from "./pages/01gettingstarted/02designToken/DesignTokenPage";
+import Introduction from "./pages/01Gettingstarted/01Introduction/Introduction";
+import DesignTokenPage from "./pages/01Gettingstarted/02DesignToken/DesignTokenPage";
 import {Container} from "vkx-ui"
-import ContainerPage from "./pages/02components/01container";
+import ContainerPage from "./pages/02Components/01Container";
 
 const Providers = () => {
   return (
