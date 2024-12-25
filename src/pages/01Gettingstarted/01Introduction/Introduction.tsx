@@ -24,14 +24,19 @@ const Introduction = () => {
 
       <h4>Installation</h4>
       <br />
-      <p>1. Install vkx-ui</p>
+      <p>1. Install vkx-ui (our npm package for all components)</p>
       <CodeSnippet language="bash" style={vscDarkPlus}>
         {`npm install vkx-ui`}
       </CodeSnippet>
       <br />
-      <p>2. Install styled-components</p>
+      <p>2. Install styled-components (use for css styling)</p>
       <CodeSnippet language="bash" style={vscDarkPlus}>
         {`npm install styled-components`}
+      </CodeSnippet>
+      <br />
+      <p>3. Install lucide (use as our icon library)</p>
+      <CodeSnippet language="bash" style={vscDarkPlus}>
+        {`npm install lucide`}
       </CodeSnippet>
     </>
   );
