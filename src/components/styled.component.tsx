@@ -6,7 +6,6 @@ export const StyledRedText = styled.div`
 `;
 
 export const SideMenuSubHeader = styled.div`
-
   padding-bottom: 4px;
   color: #000000;
   font-weight: bold;
@@ -21,7 +20,7 @@ export const SideMenuList = styled.ul`
   > li {
     margin-bottom: 8px;
     cursor: pointer;
-    color: #6b6b6b;
+    color: #888888;
     text-decoration: underline;
     /* list-style-type:none; */
   }
@@ -32,11 +31,12 @@ export const LeftNavArea = styled.div`
   background-color: #ffffff;
   overflow-y: scroll;
   border-right: 1px solid #ebebeb;
+  padding: 18px;
 `;
 
 export const RightContentArea = styled.div`
   flex-grow: 1;
   background-color: #ffffff;
   overflow-y: scroll;
-  padding: 12px;
+  padding: 18px;
 `;

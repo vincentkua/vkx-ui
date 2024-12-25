@@ -1,14 +1,14 @@
 import { OrigamiIcon } from "lucide-react";
 import styled from "styled-components";
 
-const TopMenu = () => {
+const MenuTop = () => {
   const SideMenuTopHeaderBox = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
     color: #333333;
     height: 50px;
-    padding-left: 10px;
+    padding-left: 18px;
     border-bottom: 1px solid #efefef;
     background-color:#ffffff;
   `;
@@ -24,4 +24,4 @@ const TopMenu = () => {
   );
 };
 
-export default TopMenu;
+export default MenuTop;

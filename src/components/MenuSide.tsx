@@ -2,10 +2,9 @@ import { SideMenuList, SideMenuSubHeader } from "./styled.component";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
-const SideMenu = () => {
+const MenuSide = () => {
   const navigate = useNavigate();
   const SideMenuFlexBox = styled.div`
-    padding: 12px;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -22,6 +21,7 @@ const SideMenu = () => {
 
         <SideMenuSubHeader>Components</SideMenuSubHeader>
         <SideMenuList>
+        <li onClick={() => navigate("/container")}>Container</li>
           <li>Button</li>
           <li>Modal</li>
           <li>Loading Screen</li>
@@ -39,4 +39,4 @@ const SideMenu = () => {
   );
 };
 
-export default SideMenu;
+export default MenuSide;

@@ -1,7 +1,7 @@
 const DesignTokenPage = () => {
   return (
     <>
-      <h4>Design Token</h4>
+      <h2>Design Token</h2>
       <br />
       <p style={{ textAlign: "justify" }}>
         VKX-UI React component library is built using styled-components, ensuring

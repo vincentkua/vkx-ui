@@ -1,25 +1,30 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import SideMenu from "./components/SideMenu";
+import MenuSide from "./components/MenuSide";
 import { LeftNavArea, RightContentArea } from "./components/styled.component";
-import TopMenu from "./components/TopMenu";
-import Introduction from "./pages/Introduction";
-import DesignTokenPage from "./pages/DesignTokenPage";
+import MenuTop from "./components/MenuTop";
+import Introduction from "./pages/01gettingstarted/Introduction";
+import DesignTokenPage from "./pages/01gettingstarted/DesignTokenPage";
+import Container from "./npmComponents/Container";
+import ContainerPage from "./pages/02components/01Container";
 
 const Providers = () => {
   return (
     <>
       <BrowserRouter>
-        <TopMenu />
+        <MenuTop />
         <div style={{ display: "flex", height: "calc(100vh - 50px)" }}>
           <LeftNavArea>
-            <SideMenu />
+            <MenuSide />
           </LeftNavArea>
           <RightContentArea>
-            <Routes>
-              <Route path="/" element={<Introduction />} />
-              <Route path="/designtoken" element={<DesignTokenPage />} />
-            </Routes>
+            <Container>
+              <Routes>
+                <Route path="/" element={<Introduction />} />
+                <Route path="/designtoken" element={<DesignTokenPage />} />
+                <Route path="/container" element={<ContainerPage />} />
+              </Routes>
+            </Container>
           </RightContentArea>
         </div>
       </BrowserRouter>

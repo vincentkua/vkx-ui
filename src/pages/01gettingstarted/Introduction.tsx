@@ -1,9 +1,12 @@
+import { Prism as CodeSnippet } from "react-syntax-highlighter";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
+
 const Introduction = () => {
   return (
     <>
-      <h4>Introduction</h4>
+      <h2>Introduction</h2>
       <br />
-      <p style={{ color: "#888888" , textAlign:"justify"}}>
+      <p style={{ textAlign: "justify" }}>
         VKX-UI is an open-source React component library designed to streamline
         your development process by providing reusable components. You can
         integrate it easily into your project by installing it via npm install
@@ -15,6 +18,21 @@ const Introduction = () => {
         focus on creating unique features instead of recreating common UI
         elements.
       </p>
+
+      <br />
+      <br />
+
+      <h4>Installation</h4>
+      <br />
+      <p>1. Install vkx-ui</p>
+      <CodeSnippet language="bash" style={vscDarkPlus}>
+        {`npm install vkx-ui`}
+      </CodeSnippet>
+      <br />
+      <p>2. Install styled-components</p>
+      <CodeSnippet language="bash" style={vscDarkPlus}>
+        {`npm install styled-components`}
+      </CodeSnippet>
     </>
   );
 };
