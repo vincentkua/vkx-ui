@@ -54,7 +54,7 @@ export default Container;
 
 `
 
-const ContainerPage = () => {
+const ContainerComponent = () => {
   return (
     <>
       <h2>Container</h2>
@@ -83,4 +83,4 @@ const ContainerPage = () => {
   );
 };
 
-export default ContainerPage;
+export default ContainerComponent;

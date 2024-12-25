@@ -6,7 +6,7 @@ import MenuTop from "./components/MenuTop";
 import Introduction from "./pages/01Gettingstarted/01Introduction/Introduction";
 import DesignTokenPage from "./pages/01Gettingstarted/02DesignToken/DesignTokenPage";
 import {Container} from "vkx-ui"
-import ContainerPage from "./pages/02Components/01Container";
+import ContainerPage from "./pages/02Components/01ContainerComponent/ContainerComponent";
 
 const Providers = () => {
   return (
