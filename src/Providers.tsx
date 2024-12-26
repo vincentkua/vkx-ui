@@ -5,31 +5,47 @@ import { LeftNavArea, RightContentArea } from "./components/styled.component";
 import MenuTop from "./components/MenuTop";
 import Introduction from "./pages/01Gettingstarted/01Introduction/Introduction";
 import DesignTokenPage from "./pages/01Gettingstarted/02DesignToken/DesignTokenPage";
-import {Container} from "vkx-ui"
+import { Container } from "vkx-ui";
 import ContainerPage from "./pages/02Components/01ContainerPage/ContainerPage";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
+import { useState } from "react";
+import { darkMode, lightMode } from "./utils/designtoken";
 
-
+const GlobalStyles = createGlobalStyle`
+    body{
+        background:${({ theme }) => theme.color.background.default};
+        color:${({ theme }) => theme.color.text.default};
+        transition: all 0.5s linear;
+    }
+`;
 
 const Providers = () => {
+  const [mytheme, setMytheme] = useState("dark");
+  const themeToggler = () => {
+    mytheme === "light" ? setMytheme("dark") : setMytheme("light");
+  };
   return (
     <>
-      <BrowserRouter>
-        <MenuTop />
-        <div style={{ display: "flex", height: "calc(100vh - 50px)" }}>
-          <LeftNavArea>
-            <MenuSide />
-          </LeftNavArea>
-          <RightContentArea>
-            <Container>
-              <Routes>
-                <Route path="/" element={<Introduction />} />
-                <Route path="/designtoken" element={<DesignTokenPage />} />
-                <Route path="/container" element={<ContainerPage />} />
-              </Routes>
-            </Container>
-          </RightContentArea>
-        </div>
-      </BrowserRouter>
+      <ThemeProvider theme={mytheme === "light" ? lightMode : darkMode}>
+        <BrowserRouter>
+          <GlobalStyles />
+          <MenuTop toggleDarkMode={themeToggler} currentTheme={mytheme}/>
+          <div style={{ display: "flex", height: "calc(100vh - 50px)" }}>
+            <LeftNavArea>
+              <MenuSide />
+            </LeftNavArea>
+            <RightContentArea>
+              <Container>
+                <Routes>
+                  <Route path="/" element={<Introduction />} />
+                  <Route path="/designtoken" element={<DesignTokenPage />} />
+                  <Route path="/container" element={<ContainerPage />} />
+                </Routes>
+              </Container>
+            </RightContentArea>
+          </div>
+        </BrowserRouter>
+      </ThemeProvider>
     </>
   );
 };

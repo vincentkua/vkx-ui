@@ -7,7 +7,7 @@ export const StyledRedText = styled.div`
 
 export const SideMenuSubHeader = styled.div`
   padding-bottom: 4px;
-  color: #000000;
+  color: ${({theme})=>theme.color.text.header};
   font-weight: bold;
   font-size: 14px;
 `;
@@ -28,15 +28,15 @@ export const SideMenuList = styled.ul`
 
 export const LeftNavArea = styled.div`
   flex: 0 0 220px;
-  background-color: #ffffff;
+  background-color: ${({theme})=>theme.color.background.default};
   overflow-y: scroll;
-  border-right: 1px solid #ebebeb;
+  border-right: 1px solid ${({theme})=>theme.color.cards.border2};
   padding: 18px;
 `;
 
 export const RightContentArea = styled.div`
   flex-grow: 1;
-  background-color: #ffffff;
+  background-color: ${({theme})=>theme.color.background.default};
   overflow-y: scroll;
   padding: 18px;
 `;

@@ -34,7 +34,7 @@ const Introduction = () => {
         {`npm install styled-components`}
       </CodeSnippet>
       <br />
-      <p>3. Install lucide (use as our icon library)</p>
+      <p>3. Install lucide (use for icon library)</p>
       <CodeSnippet language="bash" style={vscDarkPlus}>
         {`npm install lucide`}
       </CodeSnippet>
