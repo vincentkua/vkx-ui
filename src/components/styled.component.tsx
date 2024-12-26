@@ -30,7 +30,7 @@ export const LeftNavArea = styled.div`
   flex: 0 0 220px;
   background-color: ${({theme})=>theme.color.background.default};
   overflow-y: scroll;
-  border-right: 1px solid ${({theme})=>theme.color.cards.border2};
+  border-right: 1px solid ${({theme})=>theme.color.border.level1};
   padding: 18px;
 `;
 

@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 const Providers = () => {
-  const [mytheme, setMytheme] = useState("dark");
+  const [mytheme, setMytheme] = useState("light");
   const themeToggler = () => {
     mytheme === "light" ? setMytheme("dark") : setMytheme("light");
   };

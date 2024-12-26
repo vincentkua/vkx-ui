@@ -4,7 +4,7 @@ import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 const Introduction = () => {
   return (
     <>
-      <h2>Introduction</h2>
+      <h2>Installation</h2>
       <br />
       <p style={{ textAlign: "justify" }}>
         VKX-UI is an open-source React component library designed to streamline
@@ -21,9 +21,7 @@ const Introduction = () => {
 
       <br />
       <br />
-
-      <h4>Installation</h4>
-      <br />
+      
       <p>1. Install vkx-ui (our npm package for all components)</p>
       <CodeSnippet language="bash" style={vscDarkPlus}>
         {`npm install vkx-ui`}

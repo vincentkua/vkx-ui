@@ -34,17 +34,14 @@ export const lightMode = {
     palette,
     background: {
       default: palette.white,
-    },
-    menubar: {
-      default: palette.white,
-      hover: palette.slate[100],
-    },
-    cards: {
-      default: palette.slate[50],
+      level1: palette.slate[50],
       level2: palette.slate[200],
-      border: "#e6e6e6",
-      border2: palette.slate[200],
-      hover: palette.slate[200],
+      hover1: palette.slate[100],
+      hover2: palette.slate[200],
+    },
+    border:{
+      default: "#e6e6e6",
+      level1: palette.slate[200],
     },
     text: {
       default: palette.slate[900],
@@ -62,17 +59,14 @@ export const darkMode = {
     palette,
     background: {
       default: palette.gray[950],
-    },
-    menubar: {
-      default: palette.gray[950],
-      hover: palette.gray[900],
-    },
-    cards: {
-      default: "#181818",
+      level1: "#181818",
       level2: "#202020",
-      border: "#181818",
-      border2: "#222222",
-      hover: "#222222",
+      hover1: "#222222",
+      hover2: palette.gray[900],
+    },
+    border:{
+      default: "#181818",
+      level1: "#222222",
     },
     text: {
       default: "#FAFAFA",

@@ -15,7 +15,7 @@ const MenuTop = ({ toggleDarkMode, currentTheme }: MenuTopProps) => {
     height: 50px;
     padding-left: 18px;
     padding-right: 18px;
-    border-bottom: 1px solid ${({ theme }) => theme.color.cards.border2};
+    border-bottom: 1px solid ${({ theme }) => theme.color.border.level1};
     background-color: ${({ theme }) => theme.color.background.default};
   `;
   return (

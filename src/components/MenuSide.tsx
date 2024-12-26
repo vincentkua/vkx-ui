@@ -15,7 +15,7 @@ const MenuSide = () => {
       <SideMenuFlexBox>
         <SideMenuSubHeader>Getting Started</SideMenuSubHeader>
         <SideMenuList>
-          <li onClick={() => navigate("/")}>Introduction</li>
+          <li onClick={() => navigate("/")}>Installation</li>
           <li onClick={() => navigate("/designtoken")}>Design Token</li>
         </SideMenuList>
 

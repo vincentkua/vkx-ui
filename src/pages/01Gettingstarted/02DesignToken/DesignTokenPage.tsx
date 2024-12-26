@@ -1,3 +1,55 @@
+import { Prism as CodeSnippet } from "react-syntax-highlighter";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
+
+
+const step1code = `// styled.d.ts
+  import "styled-components";
+  import { ThemeType } from "vkx-ui";
+  
+  declare module "styled-components" {
+    export interface DefaultTheme extends ThemeType {}
+  }
+`
+
+const step2code = `// Providers.tsx
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
+import { useState } from "react";
+import { darkMode, lightMode } from "vkx-ui";
+
+const GlobalStyles = createGlobalStyle\`
+    body{
+        background:\${({ theme }) => theme.color.background.default};
+        color:\${({ theme }) => theme.color.text.default};
+        transition: all 0.5s linear;
+    }
+\`;
+
+const Providers = () => {
+  const [mytheme, setMytheme] = useState("light");
+  const themeToggler = () => {
+    mytheme === "light" ? setMytheme("dark") : setMytheme("light");
+  };
+  return (
+    <>
+      <ThemeProvider theme={mytheme === "light" ? lightMode : darkMode}>
+        <BrowserRouter>
+          <GlobalStyles />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </div>
+        </BrowserRouter>
+      </ThemeProvider>
+    </>
+  );
+};
+
+export default Providers;
+`
 const DesignTokenPage = () => {
   return (
     <>
@@ -16,6 +68,20 @@ const DesignTokenPage = () => {
         styled-components, design tokens, and DLS provides a robust foundation
         for creating visually cohesive and maintainable user interfaces.
       </p>
+
+      <br />
+      <br />
+      
+      <p>1. Create src/styled.d.ts (for intelisense typing)</p>
+      <CodeSnippet language="tsx" style={vscDarkPlus}>
+        {step1code}
+      </CodeSnippet>
+
+      <br />
+      <p>2. Add ThemeProvider to the src/Providers.tsx</p>
+      <CodeSnippet language="tsx" style={vscDarkPlus}>
+        {step2code}
+      </CodeSnippet>
     </>
   );
 };
