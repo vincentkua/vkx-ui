@@ -28,7 +28,7 @@ const MenuTop = ({ toggleDarkMode, currentTheme }: MenuTopProps) => {
   `;
 
   const { isMobile } = useWindowSize();
-  const [showLeftMenuModal, setShowLeftMenuModal] = useState(true);
+  const [showLeftMenuModal, setShowLeftMenuModal] = useState(false);
   const theme = useTheme();
 
   return (
