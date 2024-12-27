@@ -10,6 +10,7 @@ import ContainerPage from "./pages/02Components/01ContainerPage/ContainerPage";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { useState } from "react";
 import { darkMode, lightMode } from "./utils/designtoken";
+import { useWindowSize } from "./utils/useWindowSize";
 
 const GlobalStyles = createGlobalStyle`
     body{
@@ -24,16 +25,20 @@ const Providers = () => {
   const themeToggler = () => {
     mytheme === "light" ? setMytheme("dark") : setMytheme("light");
   };
+  const { isMobile } = useWindowSize();
+
   return (
     <>
       <ThemeProvider theme={mytheme === "light" ? lightMode : darkMode}>
         <BrowserRouter>
           <GlobalStyles />
-          <MenuTop toggleDarkMode={themeToggler} currentTheme={mytheme}/>
+          <MenuTop toggleDarkMode={themeToggler} currentTheme={mytheme} />
           <div style={{ display: "flex", height: "calc(100vh - 50px)" }}>
-            <LeftNavArea>
-              <MenuSide />
-            </LeftNavArea>
+            {!isMobile && (
+              <LeftNavArea>
+                <MenuSide />
+              </LeftNavArea>
+            )}
             <RightContentArea>
               <Container>
                 <Routes>
