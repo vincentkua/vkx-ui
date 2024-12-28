@@ -12,6 +12,7 @@ import { useState } from "react";
 import { darkMode, lightMode } from "./utils/designtoken";
 import { useWindowSize } from "./utils/useWindowSize";
 import DarkModePage from "./pages/01Gettingstarted/03DarkMode/DarkMode";
+import ModalPage from "./pages/02Components/02ModalPage/ModalPage";
 
 const GlobalStyles = createGlobalStyle`
     body{
@@ -47,6 +48,7 @@ const Providers = () => {
                   <Route path="/designtoken" element={<DesignTokenPage />} />
                   <Route path="/darkmode" element={<DarkModePage />} />
                   <Route path="/container" element={<ContainerPage />} />
+                  <Route path="/modal" element={<ModalPage />} />
                 </Routes>
               </Container>
             </RightContentArea>

@@ -22,9 +22,8 @@ const MenuSide = () => {
 
         <SideMenuSubHeader>Components</SideMenuSubHeader>
         <SideMenuList>
-        <li onClick={() => navigate("/container")}>Container</li>
-          <li>Button</li>
-          <li>Modal</li>
+          <li onClick={() => navigate("/container")}>Container</li>
+          <li onClick={() => navigate("/modal")}>Modal Center</li>
           <li>Loading Screen</li>
         </SideMenuList>
 
