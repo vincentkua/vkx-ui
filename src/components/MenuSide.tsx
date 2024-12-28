@@ -17,6 +17,7 @@ const MenuSide = () => {
         <SideMenuList>
           <li onClick={() => navigate("/")}>Installation</li>
           <li onClick={() => navigate("/designtoken")}>Design Token</li>
+          <li onClick={() => navigate("/darkmode")}>Dark Mode</li>
         </SideMenuList>
 
         <SideMenuSubHeader>Components</SideMenuSubHeader>
