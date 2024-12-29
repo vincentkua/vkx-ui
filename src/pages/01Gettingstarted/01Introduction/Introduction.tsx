@@ -1,6 +1,15 @@
 import { Prism as CodeSnippet } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
+const basestylecode = `<style>
+  * {
+    padding: 0;
+    margin: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+</style>
+`;
+
 const Introduction = () => {
   return (
     <>
@@ -21,7 +30,9 @@ const Introduction = () => {
 
       <br />
       <br />
-      
+
+      <h4>Dependency</h4>
+      <br />
       <p>1. Install vkx-ui (our npm package for all components)</p>
       <CodeSnippet language="bash" style={vscDarkPlus}>
         {`npm install vkx-ui`}
@@ -35,6 +46,16 @@ const Introduction = () => {
       <p>3. Install lucide (use for icon library)</p>
       <CodeSnippet language="bash" style={vscDarkPlus}>
         {`npm install lucide`}
+      </CodeSnippet>
+
+      <br />
+      <br />
+
+      <h4>Base Style</h4>
+      <br />
+      <p>1. Update the index.html with our base style, this is to reset all the padding , margin and font family to default.</p>
+      <CodeSnippet language="html" style={vscDarkPlus}>
+        {basestylecode}
       </CodeSnippet>
     </>
   );

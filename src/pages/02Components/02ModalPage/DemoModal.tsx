@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ModalCenter from "../../../components/ModalCenter";
 import { useTheme } from "styled-components";
+import Buttonz from "../../../components/Buttonz";
 
 const DemoModal = () => {
   const [showModal, setShowModal] = useState(false);
@@ -21,7 +22,8 @@ const DemoModal = () => {
           voluptatem obcaecati minus? Ad.
         </p>
       </ModalCenter>
-      <button onClick={() => setShowModal(true)}>Show Demo</button>
+      <Buttonz onClick={() => setShowModal(true)}>Show Demo</Buttonz>
+
     </>
   );
 };

@@ -120,12 +120,12 @@ const ModalPage = () => {
     <>
       <h2>Modal Center</h2>
       <br />
-      <br />
       <p>
         The Modal Center component displays an overlay box at the center of the
         screen, typically used for showcasing important content or user
         interactions without navigating away from the current page.
       </p>
+      <br />
       <DemoModal />
 
       <br />

@@ -22,6 +22,7 @@ const MenuSide = () => {
 
         <SideMenuSubHeader>Components</SideMenuSubHeader>
         <SideMenuList>
+          <li onClick={() => navigate("/buttonz")}>Buttonz</li>
           <li onClick={() => navigate("/container")}>Container</li>
           <li onClick={() => navigate("/modal")}>Modal Center</li>
           <li>Loading Screen</li>
@@ -32,7 +33,6 @@ const MenuSide = () => {
           <li>useWindowSize</li>
           <li>useDateFormat</li>
           <li>Scroll to top</li>
-          <li>Loading Screen</li>
         </SideMenuList>
       </SideMenuFlexBox>
     </>
