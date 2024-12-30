@@ -25,7 +25,7 @@ const MenuSide = () => {
           <li onClick={() => navigate("/buttonz")}>Buttonz</li>
           <li onClick={() => navigate("/container")}>Container</li>
           <li onClick={() => navigate("/modal")}>Modal Center</li>
-          <li>Loading Screen</li>
+          <li onClick={() => navigate("/loadingscreen")}>Loading Screen</li>
         </SideMenuList>
 
         <SideMenuSubHeader>Utilities</SideMenuSubHeader>

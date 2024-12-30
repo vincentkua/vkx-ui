@@ -14,6 +14,7 @@ import { useWindowSize } from "./utils/useWindowSize";
 import DarkModePage from "./pages/01Gettingstarted/03DarkMode/DarkMode";
 import ModalPage from "./pages/02Components/02ModalPage/ModalPage";
 import ButtonzPage from "./pages/02Components/03ButtonzPage/ButtonzPage";
+import LoadingScreenPage from "./pages/02Components/04LoadingScreen/LoadingScreenPage";
 
 const GlobalStyles = createGlobalStyle`
     body{
@@ -51,6 +52,7 @@ const Providers = () => {
                   <Route path="/container" element={<ContainerPage />} />
                   <Route path="/modal" element={<ModalPage />} />
                   <Route path="/buttonz" element={<ButtonzPage />} />
+                  <Route path="/loadingscreen" element={<LoadingScreenPage />} />
                 </Routes>
               </Container>
             </RightContentArea>
