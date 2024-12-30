@@ -110,7 +110,7 @@ const LoadingScreenPage = () => {
 
       <h4>Source Code </h4>
       <CodeSnippet language="tsx" style={vscDarkPlus}>
-        {sampleusagecode}
+        {sourcecode}
       </CodeSnippet>
     </>
   );
