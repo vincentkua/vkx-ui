@@ -33,25 +33,24 @@ export default DemoLoadingScreen;
 `;
 
 const sourcecode = `//LoadingScreen.tsx
-//LoadingScreen.tsx
 import { LoaderCircleIcon } from "lucide-react";
 import ReactDOM from "react-dom";
 import { styled } from "styled-components";
 
-const LoadingScreen = () => {
-  const RotatingDiv = styled.div\`
-    display: flex;
-    animation: rotateInfinite 1s linear infinite;
-    @keyframes rotateInfinite {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
+const RotatingDiv = styled.div\`
+  display: flex;
+  animation: rotateInfinite 1s linear infinite;
+  @keyframes rotateInfinite {
+    0% {
+      transform: rotate(0deg);
     }
-  \`;
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+\`;
 
+const LoadingScreen = () => {
   return ReactDOM.createPortal(
     <div
       style={{

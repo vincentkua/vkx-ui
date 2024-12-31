@@ -2,13 +2,14 @@ import { SideMenuList, SideMenuSubHeader } from "./styled.component";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
+const SideMenuFlexBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+`;
+
 const MenuSide = () => {
   const navigate = useNavigate();
-  const SideMenuFlexBox = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  `;
 
   return (
     <>

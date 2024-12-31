@@ -5,7 +5,6 @@ import { LeftNavArea, RightContentArea } from "./components/styled.component";
 import MenuTop from "./components/MenuTop";
 import Introduction from "./pages/01Gettingstarted/01Introduction/Introduction";
 import DesignTokenPage from "./pages/01Gettingstarted/02DesignToken/DesignTokenPage";
-import { Container } from "vkx-ui";
 import ContainerPage from "./pages/02Components/01ContainerPage/ContainerPage";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { useState } from "react";
@@ -15,6 +14,7 @@ import DarkModePage from "./pages/01Gettingstarted/03DarkMode/DarkMode";
 import ModalPage from "./pages/02Components/02ModalPage/ModalPage";
 import ButtonzPage from "./pages/02Components/03ButtonzPage/ButtonzPage";
 import LoadingScreenPage from "./pages/02Components/04LoadingScreen/LoadingScreenPage";
+import Container from "./components/Container";
 
 const GlobalStyles = createGlobalStyle`
     body{

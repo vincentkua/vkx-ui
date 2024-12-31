@@ -14,19 +14,19 @@ type MenuTopProps = {
   currentTheme: string;
 };
 
-const MenuTop = ({ toggleDarkMode, currentTheme }: MenuTopProps) => {
-  const SideMenuTopHeaderBox = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: ${({ theme }) => theme.color.text.header};
-    height: 50px;
-    padding-left: 18px;
-    padding-right: 18px;
-    border-bottom: 1px solid ${({ theme }) => theme.color.border.level1};
-    background-color: ${({ theme }) => theme.color.background.default};
-  `;
+const SideMenuTopHeaderBox = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: ${({ theme }) => theme.color.text.header};
+  height: 50px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-bottom: 1px solid ${({ theme }) => theme.color.border.level1};
+  background-color: ${({ theme }) => theme.color.background.default};
+`;
 
+const MenuTop = ({ toggleDarkMode, currentTheme }: MenuTopProps) => {
   const { isMobile } = useWindowSize();
   const [showLeftMenuModal, setShowLeftMenuModal] = useState(false);
   const theme = useTheme();
