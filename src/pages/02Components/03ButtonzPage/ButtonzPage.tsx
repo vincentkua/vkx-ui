@@ -3,7 +3,7 @@ import { Prism as CodeSnippet } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const sampleusagecode = `//DemoButtonz.tsx
-import Buttonz from "vkx-ui";
+import { Buttonz } from "vkx-ui";
 
 const DemoButtonz = () => {
     return ( 

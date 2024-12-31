@@ -36,9 +36,9 @@ const MenuSide = () => {
 
         <SideMenuSubHeader>Utilities</SideMenuSubHeader>
         <SideMenuList>
+          <li onClick={() => navigate("/scrollToTop")}>scrollToTop</li>
           <li>useWindowSize</li>
           <li>useDateFormat</li>
-          <li>Scroll to top</li>
         </SideMenuList>
       </SideMenuFlexBox>
     </>

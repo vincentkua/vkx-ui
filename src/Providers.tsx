@@ -15,6 +15,7 @@ import ModalPage from "./pages/02Components/02ModalPage/ModalPage";
 import ButtonzPage from "./pages/02Components/03ButtonzPage/ButtonzPage";
 import LoadingScreenPage from "./pages/02Components/04LoadingScreen/LoadingScreenPage";
 import Container from "./components/Container";
+import ScrollToTopPage from "./pages/03utilities/01ScrollToTop/ScrollToTopPage";
 
 const GlobalStyles = createGlobalStyle`
     body{
@@ -53,6 +54,7 @@ const Providers = () => {
                   <Route path="/modal" element={<ModalPage />} />
                   <Route path="/buttonz" element={<ButtonzPage />} />
                   <Route path="/loadingscreen" element={<LoadingScreenPage />} />
+                  <Route path="/scrollToTop" element={<ScrollToTopPage />} />
                 </Routes>
               </Container>
             </RightContentArea>

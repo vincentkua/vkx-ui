@@ -4,8 +4,7 @@ import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const sampleusagecode = `//DemoLoadingScreen.tsx
 import { useEffect, useState } from "react";
-import Buttonz from "../../../components/Buttonz";
-import LoadingScreen from "../../../components/LoadingScreen";
+import { Buttonz , LoadingScreen } from "vkx-ui";
 
 const DemoLoadingScreen = () => {
   const [showLoading, setShowLoading] = useState(false);
@@ -78,7 +77,7 @@ const LoadingScreen = () => {
 };
 
 export default LoadingScreen;
-`
+`;
 
 const LoadingScreenPage = () => {
   return (

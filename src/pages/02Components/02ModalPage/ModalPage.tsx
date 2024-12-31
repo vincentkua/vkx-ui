@@ -4,7 +4,7 @@ import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const sampleusagecode = `//DemoModal.tsx
 import { useState } from "react";
-import ModalCenter from "vkx-ui";
+import { ModalCenter } from "vkx-ui";
 import { useTheme } from "styled-components";
 
 const DemoModal = () => {
