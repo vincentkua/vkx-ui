@@ -43,7 +43,7 @@ const Providers = () => {
                 <MenuSide />
               </LeftNavArea>
             )}
-            <RightContentArea>
+            <RightContentArea id="notes-area">
               <Container>
                 <Routes>
                   <Route path="/" element={<Introduction />} />

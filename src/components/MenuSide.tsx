@@ -1,6 +1,7 @@
 import { SideMenuList, SideMenuSubHeader } from "./styled.component";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import { scrollToTop } from "../utils/scrollToTop";
 
 const SideMenuFlexBox = styled.div`
   display: flex;
@@ -9,7 +10,11 @@ const SideMenuFlexBox = styled.div`
 `;
 
 const MenuSide = () => {
-  const navigate = useNavigate();
+  const pagenavigate = useNavigate();
+  const navigate = (url: string) => {
+    pagenavigate(url);
+    scrollToTop("notes-area");
+  };
 
   return (
     <>
