@@ -31,8 +31,6 @@ const Introduction = () => {
       <br />
       <br />
 
-      <h4>Dependency</h4>
-      <br />
       <p>1. Install vkx-ui (our npm package for all components)</p>
       <CodeSnippet language="bash" style={vscDarkPlus}>
         {`npm install vkx-ui`}
@@ -47,13 +45,8 @@ const Introduction = () => {
       <CodeSnippet language="bash" style={vscDarkPlus}>
         {`npm install lucide`}
       </CodeSnippet>
-
       <br />
-      <br />
-
-      <h4>Base Style</h4>
-      <br />
-      <p>1. Update the index.html with our base style, this is to reset all the padding , margin and font family to default.</p>
+      <p>4. Update the index.html with our base style, this is to reset all the padding , margin and font family to default.</p>
       <CodeSnippet language="html" style={vscDarkPlus}>
         {basestylecode}
       </CodeSnippet>

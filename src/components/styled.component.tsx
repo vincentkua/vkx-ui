@@ -39,4 +39,5 @@ export const RightContentArea = styled.div`
   background-color: ${({theme})=>theme.color.background.default};
   overflow-y: scroll;
   padding: 18px;
+  padding-bottom:50px;
 `;

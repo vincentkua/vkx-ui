@@ -22,8 +22,8 @@ const MenuSide = () => {
         <SideMenuSubHeader>Getting Started</SideMenuSubHeader>
         <SideMenuList>
           <li onClick={() => navigate("/")}>Installation</li>
-          <li onClick={() => navigate("/designtoken")}>Design Token</li>
           <li onClick={() => navigate("/darkmode")}>Dark Mode</li>
+          <li onClick={() => navigate("/designtoken")}>Design Token</li>
         </SideMenuList>
 
         <SideMenuSubHeader>Components</SideMenuSubHeader>
@@ -39,7 +39,6 @@ const MenuSide = () => {
           <li onClick={() => navigate("/scrollToTop")}>scrollToTop</li>
           <li onClick={() => navigate("/useWindowSize")}>useWindowSize</li>
           <li onClick={() => navigate("/useCurrency")}>useCurrency</li>
-
         </SideMenuList>
       </SideMenuFlexBox>
     </>
