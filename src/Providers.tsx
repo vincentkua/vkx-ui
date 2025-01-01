@@ -17,6 +17,7 @@ import LoadingScreenPage from "./pages/02Components/04LoadingScreen/LoadingScree
 import Container from "./components/Container";
 import ScrollToTopPage from "./pages/03utilities/01ScrollToTop/ScrollToTopPage";
 import UseWindowSizePage from "./pages/03utilities/02UseWindowSize/UseWindowSizePage";
+import UseCurrencyPage from "./pages/03utilities/03UseCurrency/UseCurrencyPage";
 
 const GlobalStyles = createGlobalStyle`
     body{
@@ -57,6 +58,7 @@ const Providers = () => {
                   <Route path="/loadingscreen" element={<LoadingScreenPage />} />
                   <Route path="/scrollToTop" element={<ScrollToTopPage />} />
                   <Route path="/useWindowSize" element={<UseWindowSizePage />} />
+                  <Route path="/useCurrency" element={<UseCurrencyPage />} />
                 </Routes>
               </Container>
             </RightContentArea>

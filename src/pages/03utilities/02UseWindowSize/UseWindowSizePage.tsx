@@ -74,7 +74,6 @@ const UseWindowSizePage = () => {
     <>
       <h2>useWindowSize</h2>
       <br />
-      <br />
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
         accusamus fugit officiis quo odio itaque ipsam sequi porro ipsa quidem

@@ -38,7 +38,8 @@ const MenuSide = () => {
         <SideMenuList>
           <li onClick={() => navigate("/scrollToTop")}>scrollToTop</li>
           <li onClick={() => navigate("/useWindowSize")}>useWindowSize</li>
-          <li>useDateFormat</li>
+          <li onClick={() => navigate("/useCurrency")}>useCurrency</li>
+
         </SideMenuList>
       </SideMenuFlexBox>
     </>
