@@ -1,7 +1,7 @@
 import { Prism as CodeSnippet } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-const step1code = `// designToken.json
+const step1code = `// designToken.tsx
 const palette = {
   white: "#FFFFFF",
   black: "#000000 ",
