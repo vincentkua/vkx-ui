@@ -18,6 +18,7 @@ import Container from "./components/Container";
 import ScrollToTopPage from "./pages/03utilities/01ScrollToTop/ScrollToTopPage";
 import UseWindowSizePage from "./pages/03utilities/02UseWindowSize/UseWindowSizePage";
 import UseCurrencyPage from "./pages/03utilities/03UseCurrency/UseCurrencyPage";
+import SwitchzPage from "./pages/02Components/05SwitchzPage";
 
 const GlobalStyles = createGlobalStyle`
     body{
@@ -59,6 +60,7 @@ const Providers = () => {
                   <Route path="/scrollToTop" element={<ScrollToTopPage />} />
                   <Route path="/useWindowSize" element={<UseWindowSizePage />} />
                   <Route path="/useCurrency" element={<UseCurrencyPage />} />
+                  <Route path="/switchz" element={<SwitchzPage />} />
                 </Routes>
               </Container>
             </RightContentArea>
